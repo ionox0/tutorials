@@ -11,7 +11,6 @@ multi line comment
 using namespace std;
 
 
-
 // if the getClass method of animal is declared virtual,
 // this will produce the correct result for the Dog subclass
 void whatClassAreYou(Animalvirt animal){
@@ -49,15 +48,6 @@ int main(){
 	return 0;
 
 } 
-
-
-
-
-
-
-
-
-
 
 
 class Animal {
@@ -134,7 +124,6 @@ void Animal::toString() {
 	cout << this -> name << " is " << this -> height << " cms tall and " << this -> weight << " kgs" << endl;
 
 }
-
 
 
 // Inheritance
@@ -242,37 +231,26 @@ int main6() {
 	int myAge = 39; 
 
 	char myGrade = 'A';
-
 	cout << "size of int " << sizeof(myAge) << endl;
-
 	cout << "size of char " << sizeof(myGrade) << endl;
-
 	cout << "myAge is located at " << &myAge << endl;
-
-	
 
 	int myAge2 = 39;
 
 	int* agePtr = &myAge2;
-
 	cout << "Address of pointer " << agePtr << endl;
-
 	cout << "Data at memory address " << *agePtr << endl;
 
 	int badNums[5] = {4,13,14,24,34};
-
 	int* numArrayPtr = badNums;
 
 	cout << "Address " << numArrayPtr << " Value " << *numArrayPtr << endl;
-
 	numArrayPtr++; 	
 	
 	// Arrays are just pointers
 	cout << "Address " << badNums << " Value " << *badNums << endl;
 
 }
-
-
 
 
 
@@ -296,7 +274,6 @@ int main5() {
 	}
 
 }
-
 
 
 int main4(){
@@ -364,21 +341,13 @@ int main3() {
 int main2() {
 	// working with vetors 
 	vector <int> lotteryNumVect(10);
-
 	int lotteryNumArray[5] = {4, 13, 14, 24, 34};
-
 	lotteryNumVect.insert(lotteryNumVect.begin(), lotteryNumArray, lotteryNumArray + 3);
-
 	lotteryNumVect.insert(lotteryNumVect.begin() + 5, 44);
-
 	cout << lotteryNumVect.at(5) << endl;
-
 	lotteryNumVect.push_back(64);
-
 	cout << "Final Value " << lotteryNumVect.size();
-
 	lotteryNumVect.pop_back();
-
 	cout << "Size " << lotteryNumVect.size() << endl;
 }
 
@@ -390,11 +359,8 @@ int main1() {
 	cout << sizeof(29) << endl;
 	
 	char happyArray[4] = {'H', 'a', 'p', '\0'};
-
 	string birthdayString = " Birthday";
-
 	double eulersConstant = .57721;
-
 	cout << happyArray + birthdayString << endl;
 	
 	string eulerDouble;
